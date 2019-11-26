@@ -1,23 +1,34 @@
+<view class="contain">
+  <view class="line"> line .line</view>
+  <view class="h1">Header 1 .h1</view>
+  <view class="h2">Header 2 .h2</view>
+  <view class="h3">Header 3 .h3</view>
+  <view class="p">paragraph .p</view>
+  <view class="strong">Strong .strong</view>
+  <view class="italic">Italic .italic</view>
+  <view class="line"></view>
+  <view class="orange">.orange</view>
+  <view class="lblue">.lblue</view>
+  <view class="blue">.blue</view>
+  <view class="dblue">.dblue</view>
+  <view class="lgrey">lgrey</view>
+  <view class="dgrey">dgrey</view>
+  <view class="line"></view>
+  <view class="btn">.btn</view>
+  <view class="btn lbluebg">.btn .lbluebg</view>
+  <view class="btn orangebg">.btn .orangebg</view>
+  <view class="tag lbluebg">.tag .lblue</view>
+  <view class="tag orangebg">.tag .orangebg</view>
 
-<view>Header 1 .h1</view>
-<view>Header 2 .h2</view>
-<view>Header 3 .h3</view>
-<view>paragraph .p</view>
-<view> line .line</view>
-<view>Strong .strong</view>
-<view>Italic .italic</view>
-<view>btn-primary</view>
-<view>btn-action</view>
-<view>btn</view>
-<view>.tag-act</view>
-<view>.tag</view>
-<view>stat-pending</view>
-<view>stat-accepted</view>
-<view>stat-rejected</view>
-<view>card .card</view>
-<view>avatar</view>
-<view>job</view>
-<view>Job Accepted .job .accepted</view>
-<view>Job Pending .job .pending</view>
-<view>Job Rejected .job .rejected</view>
-<view>Job Rejected .job .rejected</view>
+  <view class="stat-pending">stat-pending</view>
+  <view class="stat-accepted">stat-accepted</view>
+  <view class="stat-rejected">stat-rejected</view>
+  <view class="card">card .card</view>
+  <view class="line"></view>
+  <view class="avatar">avatar</view>
+  <view class="job">job</view>
+  <view class="accepted">Job Accepted .job .accepted</view>
+  <view class="pending">Job Pending .job .pending</view>
+  <view class="rejected ">Job Rejected .job .rejected</view>
+  <view class="completed">Job Rejected .job .completed</view>
+</view>
