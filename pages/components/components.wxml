@@ -1,0 +1,23 @@
+
+<view>Header 1 .h1</view>
+<view>Header 2 .h2</view>
+<view>Header 3 .h3</view>
+<view>paragraph .p</view>
+<view> line .line</view>
+<view>Strong .strong</view>
+<view>Italic .italic</view>
+<view>btn-primary</view>
+<view>btn-action</view>
+<view>btn</view>
+<view>.tag-act</view>
+<view>.tag</view>
+<view>stat-pending</view>
+<view>stat-accepted</view>
+<view>stat-rejected</view>
+<view>card .card</view>
+<view>avatar</view>
+<view>job</view>
+<view>Job Accepted .job .accepted</view>
+<view>Job Pending .job .pending</view>
+<view>Job Rejected .job .rejected</view>
+<view>Job Rejected .job .rejected</view>
