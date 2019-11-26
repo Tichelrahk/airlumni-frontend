@@ -5,8 +5,7 @@
     "pages/list/list",
     "pages/bookings/bookings",
     "pages/components/components",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   
   "window": {
