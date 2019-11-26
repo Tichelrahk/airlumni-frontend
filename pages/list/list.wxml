@@ -1,2 +1,20 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view class="content">
+  <view class="header">Available Services</view>
+  <view class="container">
+
+    <view wx:for="{{infoCard}}" wx:for-item="info">
+      <view class="card" bindtap="cardClick" data-id="{{info.id}}">    
+        <view class="card-content">
+        
+          <image src="{{info.user.profile_picture}}"/>
+          <view class="username">{{info.user.name}}</view>
+          <view class="price">{{info.price}}</view>
+          <view class="code">{{info.name}}</view>
+
+        </view>
+      </view>
+    </view> 
+
+  </view>
+</view>

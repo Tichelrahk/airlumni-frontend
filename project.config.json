@@ -4,13 +4,21 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
@@ -44,12 +52,27 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "Components",
 					"pathName": "pages/components/components",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "landing",
+					"pathName": "pages/landing/landing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/list/list",
+					"pathName": "pages/list/list",
+					"query": "",
 					"scene": null
 				}
 			]

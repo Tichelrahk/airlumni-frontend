@@ -1,2 +1,12 @@
 <!--pages/landing/landing.wxml-->
-<text>pages/landing/landing.wxml</text>
+<view class="banner">
+  <view class="container">
+    <view class="h1">Airlumni</view>
+    <view class="p">The easiest way to get a coding buddy</view>
+  <button bindtap="goToIndex" class="btn btn-flat" url="#">Get Started</button>
+  </view>
+</view>
+
+
+
+

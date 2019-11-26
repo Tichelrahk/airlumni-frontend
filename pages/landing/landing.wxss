@@ -1,1 +1,22 @@
 /* pages/landing/landing.wxss */
+.banner{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.codingworkshopsforkids.com.au/wp-content/uploads/2016/10/iStock_102589287_MEDIUM.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+
+.h1{
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.p{
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
