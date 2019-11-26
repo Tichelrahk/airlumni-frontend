@@ -31,4 +31,5 @@
   <view class="pending">Job Pending .job .pending</view>
   <view class="rejected ">Job Rejected .job .rejected</view>
   <view class="completed">Job Rejected .job .completed</view>
+
 </view>
