@@ -1,3 +1,12 @@
+page {
+  --black: #000000;
+  --orange: #f39422;
+  --lblue: #537ec5;
+  --blue:  #293a80;
+  --dblue: #010038;
+}
+
+
 /**app.wxss**/
 .container {
   height: 100%;
@@ -7,12 +16,102 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
 
 /* LAYOUT */
+.contain {
+  padding: 50rpx;
+  font-family: Helvetica, sans-serif;
+}
+
+.p-1 {
+  padding: 10rpx;
+}
+
+.center {
+  margin: 0 auto;
+}
 
 /* TEXT COMPONENTS */
 
+.h1 {
+ font-size: 70rpx;
+ margin: 10 0;
+}
+
+.h2 {
+  font-size: 60rpx;
+  font-weight: 500;
+}
+
+.h3 {
+  font-size: 50rpx;
+  font-weight: 500;
+}
+
+.p { 
+  
+}
+
+.line {
+  border-bottom: solid 5rpx;
+  margin: 20rpx 0;
+}
+.strong {
+  font-weight: 500;   
+}
+
+.italic {
+  font-style: italic;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.lblue {
+  color: var(--lblue);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.dblue {
+  color: var(--dblue);
+}
+
+.lgrey {
+  color: darkgrey;
+}
+
+.dgrey {
+  color: lightgray;
+}
+
 /* BUTTONS, STATUS AND TAGS */
+
+
+.btn{
+  padding: 30rpx 60rpx;
+  border: solid 5rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  margin: 20rpx;
+}
+
+.lbluebg {
+  background-color: var(--lblue) ;
+}
+
+.orangebg {
+  background-color: var(--orange);
+}
+
+.tag {
+    border: solid 1rpx;
+    padding: 10rpx 20rpx;
+    margin: 10rpx;
+}
 
 /* AVATARS AND IMAGES */
