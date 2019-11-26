@@ -26,6 +26,26 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    let page = this;
+
+
+    // Get api data
+    wx.request({
+      url: "https://airlumni.herokuapp.com/api/v1/services",
+      method: 'GET',
+      success(res) {
+        const services = res.data.services;
+
+        // Update local data
+        page.setData({
+          infoCard: services
+        });
+
+        console.log(services)
+
+        wx.hideToast();
+      }
+    });
 
   },
 

@@ -8,6 +8,12 @@ Page({
 
   },
 
+  goToIndex: function () {
+    wx.navigateTo({
+      url: '/pages/list/list',
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
