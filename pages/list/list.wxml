@@ -6,7 +6,7 @@
       <view class="card" bindtap="cardClick" data-id="{{info.id}}">  
         <view class="dflex space-between line pb"> 
           <view class="h2 no-grow">{{info.name}}</view>
-          <view class="price no-grow">${{info.price}}</view>
+          <view class="price no-grow">${{info.price}}/hr</view>
         </view>
         <view class="dflex"> 
           <image class="avatar" src="{{info.user.profile_picture}}"/>
