@@ -4,7 +4,7 @@
   <view class="space"></view>
   <view class="h2 blue">Confirmed bookings</view>
   <view class="statuscard greenbd">
-    <view class="blue strong italic">2 hour of Golo @ $238/hr</view>
+    <view class="blue strong italic">2 hour of LIS @ $283/hr</view>
     <view class="line"></view>
     <view>Date: Thursday, 25 December 2019</view>
     <view>Time: 18:00 - 20:00</view>
@@ -15,7 +15,7 @@
 
   <view class="h2 blue">Pending Bookings</view>
   <view class="statuscard orangebd">
-    <view class="blue strong italic">1 hour of Lagoona @ $207/hr</view>
+    <view class="blue strong italic">1 hour of Kafe @ $207/hr</view>
     <view class="line"></view>
     <view>Date: Thursday, 25 December 2019</view>
     <view>Time: 19:00 - 20:00</view>
@@ -27,7 +27,7 @@
 
   <view class="h2 blue">Rejected Bookings</view>
   <view class="statuscard redbd">
-    <view class="blue strong italic">5 hours of Script.NEW @ $251/hr</view>
+    <view class="blue strong italic">5 hours of Visual Basic .NET @ $251/hr</view>
     <view class="line"></view>
     <view>Date: Thursday, 25 December 2019</view>
     <view>Time: 7:00 - 12:00</view>
