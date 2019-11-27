@@ -3,8 +3,8 @@
 <view class="contain">
   <view class="card pb">  
     <view class="dflex space-between pb"> 
-      <view class="h2 no-grow dblue">{{service.name}}</view>
-      <view class="price no-grow">${{service.price}}</view>
+      <view class="h2 no-grow blue">{{service.name}}</view>
+      <view class="h2 orange no-grow">${{service.price}}/hr</view>
     </view>
 
     <view class="description pb">
@@ -12,6 +12,8 @@
       <view class="descriptionInfo">{{service.description}}</view>
     </view> 
   </view>
+
+  <view class="space"></view>
 
   <view class="section">
     <view class="dflex"> 
@@ -23,7 +25,7 @@
     <view class="bioInfo">{{service.user.description}}</view>
   </view>
 
-<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Confirm</button>
+<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Book</button>
 
 
 </view> 

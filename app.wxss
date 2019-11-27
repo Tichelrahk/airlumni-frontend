@@ -4,6 +4,13 @@ page {
   --lblue: #537ec5;
   --blue:  #293a80;
   --dblue: #010038;
+  --green: green;
+  --orange: orange;
+  --red: red;
+  --lgrey: lightgray;
+  --grey: grey;
+
+
 }
 
 
@@ -26,16 +33,40 @@ page {
   font-size: 45rpx;
   font-weight: 600;
   box-shadow: 2px 2px 2px 0px rgba(100, 100, 100, .5);
+  display: float;
 }
 .contain {
   padding: 50rpx;
   font-family: Helvetica, sans-serif;
 }
 
+.greenbd {
+  border-left: solid 10rpx var(--green);
+}
+
+.orangebd {
+  border-left: solid 10rpx var(--orange);
+}
+
+.greybd {
+  border-left: solid 10rpx var(--grey);
+}
+
+.redbd {
+  border-left: solid 10rpx var(--red);
+}
+
+.statuscard {
+  padding: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  box-shadow: 2px 2px 20rpx 0px rgba(200, 200, 200, .2);
+
+}
+
 .card {
   padding: 30rpx;
   border-radius: 10rpx;
-  border: 1px solid lightgrey;
   margin-top: 20rpx;
   box-shadow: 2px 2px 20rpx 0px rgba(200, 200, 200, .2);
 
@@ -138,6 +169,9 @@ page {
   color: lightgray;
 }
 
+.white {
+  color: white;
+}
 /* BUTTONS, STATUS AND TAGS */
 
 
@@ -149,12 +183,28 @@ page {
   margin: 20rpx;
 }
 
+.greenbg {
+  background-color: var(--green);
+}
+
+.redbg {
+  background-color: var(--red);
+}
+
+.orange bg {
+  background-color: var(--orange);
+}
 .lbluebg {
   background-color: var(--lblue) ;
 }
 
 .orangebg {
   background-color: var(--orange);
+}
+
+.greybg {
+  background-color: var(--grey);
+
 }
 
 .tag {
@@ -185,5 +235,24 @@ page {
   font-weight: 600;   
   text-align: right;
   font-size: 35rpx;
+}
 
+.spacehuge {
+  padding: 40rpx;
+}
+
+.spacelarge {
+  padding: 30rpx;
+}
+
+.space {
+  padding: 20rpx;
+}
+
+.spacesmall {
+  padding: 10rpx;
+}
+
+.spacetiny {
+  padding: 5rpx;
 }
