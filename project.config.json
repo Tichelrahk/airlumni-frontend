@@ -52,7 +52,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -70,8 +70,22 @@
 				},
 				{
 					"id": 2,
-					"name": "pages/list/list",
+					"name": "list",
 					"pathName": "pages/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "show",
+					"pathName": "pages/show/show",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Components",
+					"pathName": "pages/components/components",
 					"query": "",
 					"scene": null
 				}

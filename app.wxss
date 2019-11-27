@@ -94,7 +94,7 @@ page {
 
 .btn{
   padding: 30rpx 60rpx;
-  border: solid 5rpx;
+  /* border: solid 1rpx; */
   border-radius: 20rpx;
   text-align: center;
   margin: 20rpx;
