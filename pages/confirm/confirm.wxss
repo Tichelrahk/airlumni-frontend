@@ -1,1 +1,31 @@
 /* pages/confirm/confirm.wxss */
+.container{
+ 
+  background-color: #537ec5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.card
+
+.section{
+  background-color:white;
+  margin: 25px 0;
+  width: 265px;
+  border-radius: 3px;
+  height: 39px;
+}
+
+.submit{
+  background-color: #f39422;
+  opacity: 10px;
+  color: whitesmoke;
+  margin-top: 100px;
+}
+
+.section__title{
+  color: whitesmoke;
+  text-align: center;
+}
