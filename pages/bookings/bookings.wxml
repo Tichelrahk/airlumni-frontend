@@ -20,7 +20,7 @@
     <view>Date: Thursday, 25 December 2019</view>
     <view>Time: 19:00 - 20:00</view>
     <view>Location: 112 Black Street, Dru Hill</view>
-    <view class="btn orangebg white">Waiting for Bjorn to Accept</view>
+    <view class="btn orangebg white">Waiting for Homan Provement to Accept</view>
   </view>
 
   <view class="spacelarge"></view>
@@ -32,7 +32,7 @@
     <view>Date: Thursday, 25 December 2019</view>
     <view>Time: 7:00 - 12:00</view>
     <view>Location: 112 Black Street, Dru Hill</view>
-    <view class="btn redbg white">NAME was unable to confirm your booking</view>
+    <view class="btn redbg white">Harry Carey was unable to confirm your booking</view>
   </view>
 </view>
 
