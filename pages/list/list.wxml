@@ -11,7 +11,7 @@
           <view class="username">{{info.user.name}}</view>
           <view class="price">{{info.price}} RMB</view>
           <view class="code">{{info.name}}</view>
-
+ 
         </view>
       </view>
     </view> 

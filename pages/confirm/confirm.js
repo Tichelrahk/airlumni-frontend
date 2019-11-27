@@ -1,4 +1,4 @@
-// pages/show/show.js
+// pages/confirm/confirm.js
 Page({
 
   /**
@@ -8,38 +8,10 @@ Page({
 
   },
 
-  goToConfirm: function () {
-    wx.navigateTo({
-      url: '/pages/confirm/confirm'
-    })
-  },
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    let page = this;
- 
-
-    // Get api data
-    wx.request({
-      url: `https://airlumni.herokuapp.com/api/v1/services/${options.id}`,
-      method: 'GET',
-      success(res) {
-        console.log("I want this")
-        console.log(res)
-        const service = res.data
-
-        // Update local data
-        page.setData({
-          service: service
-        });
-
-        console.log(service)
-
-        wx.hideToast();
-      }
-    });
 
   },
 
