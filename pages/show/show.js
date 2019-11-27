@@ -1,4 +1,4 @@
-// pages/list/list.js
+// pages/show/show.js
 Page({
 
   /**
@@ -8,18 +8,32 @@ Page({
 
   },
 
-  cardClick: function (event) {
-    console.log(event)
-    let id = event.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/show/show?id=${id}`,
-    })
-  },
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    let page = this;
+
+
+    // Get api data
+    wx.request({
+      url: `https://airlumni.herokuapp.com/api/v1/services/${options.id}`,
+      method: 'GET',
+      success(res) {
+        console.log("I want this")
+        console.log(res)
+        const service = res.data
+
+        // Update local data
+        page.setData({
+          service: service
+        });
+
+        console.log(service)
+
+        wx.hideToast();
+      }
+    });
 
   },
 
@@ -34,26 +48,6 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    let page = this;
-
-
-    // Get api data
-    wx.request({
-      url: "https://airlumni.herokuapp.com/api/v1/services",
-      method: 'GET',
-      success(res) {
-        const services = res.data.services;
-
-        // Update local data
-        page.setData({
-          infoCard: services
-        });
-
-        console.log(services)
-
-        wx.hideToast();
-      }
-    });
 
   },
 

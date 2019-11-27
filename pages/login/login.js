@@ -6,7 +6,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    userId: "" 
   },
 
   getUserInfo: function (e) {
@@ -21,7 +21,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    this.data.userId = app.globalData.userId
   },
 
   /**
