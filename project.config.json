@@ -94,6 +94,14 @@
 					"id": -1,
 					"name": "confirm",
 					"pathName": "pages/confirm/confirm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Bookings",
+					"pathName": "pages/bookings/bookings",
+					"query": "",
 					"scene": null
 				}
 			]
