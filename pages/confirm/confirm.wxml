@@ -8,7 +8,7 @@
   <form class="form" bindsubmit="goToBooking">
     <view class="time">
     <text>Start from</text>
-      <picker mode="date" name="start_date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <picker mode="date" name="start_date" value="{{date}}" start="2019-11-27" end="2020-09-01" bindchange="bindDateChange">
         <view class="picker">
           {{date}}
         </view>
