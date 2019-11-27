@@ -51,6 +51,10 @@ page {
   flex-grow: 0;
 }
 
+.section {
+  padding: 20rpx;
+  margin: 20rpx, 0rpx;
+}
 .p-1 {
   padding: 10rpx;
 }
