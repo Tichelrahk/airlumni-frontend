@@ -8,12 +8,14 @@ Page({
 
   },
 
-  goToConfirm: function () {
+  goToConfirm: function (e) {
+    console.log(e)
+    const id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '/pages/confirm/confirm'
+      url: `/pages/confirm/confirm?id=${id}`
     })
   },
-
+ 
   /**
    * Lifecycle function--Called when page load
    */

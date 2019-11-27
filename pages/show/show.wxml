@@ -23,5 +23,7 @@
     <view class="bioInfo">{{service.user.description}}</view>
   </view>
 
-<button bindtap="goToConfirm" class="btn orangebg">Book</button>
+<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Confirm</button>
+
+
 </view> 
