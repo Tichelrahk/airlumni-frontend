@@ -5,13 +5,13 @@
   <view class="code">{{service.name}}</view>
 </view>
 
-<button bindtap="goToConfirm" class="btn orangebg">Confirm</button>
+<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Confirm</button>
 
 <view class="description">
   <view class="titleBio">Bio</view>
   <view class="bioInfo">{{service.description}}</view>
 </view>
- 
+  
 <view class="availability">
 <view class="titleAvailability">Availability</view>
 <view class="calendar">days</view>
