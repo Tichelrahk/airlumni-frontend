@@ -17,6 +17,23 @@
     "navigationBarTitleText": "Airlumni",
     "navigationBarTextStyle": "white"
   },
+
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#f39422",
+    "backgroundColor": "#293a80",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "List"
+      },
+      {
+        "pagePath": "pages/bookings/bookings",
+        "text": "Bookings"
+      }
+    ]
+  },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

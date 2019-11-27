@@ -12,6 +12,7 @@
     <view class="tag lbluebg">{{service.name}}</view>
   </view>
 
+<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Confirm</button>
   <view class="description section">
     <view class="titleBio strong italic line">Bio</view>
     <view class="bioInfo">{{service.description}}</view>
@@ -23,9 +24,9 @@
   </view>
 
 
+
   <view class="map section">
     <view class="titleMap strong italic line">Map</view>
     <view class="map">map goes here</view>
   </view>
-<button bindtap="goToConfirm" class="btn orangebg">Book</button>
 </view> 

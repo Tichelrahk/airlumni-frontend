@@ -1,5 +1,19 @@
 <!--pages/confirm/confirm.wxml-->
-
+<view class="container">
 <view class="userInfo">
-<view></view>
+  <image class="avatar" src="{{service.user.profile_picture}}"/>
+  <view class="username">{{service.user.name}}</view>
+  <view class="code">{{service.name}}</view>
 </view>
+<view class="form">
+<input class="startTime" name="startTime" placeholder="Starting " />
+<text>to</text>
+<input class="endTime" name="startTime" placeholder="ending" />
+</view>
+
+<button bindtap="goToBooking" class="submit">Confirm</button>
+
+</view>
+
+
+
