@@ -1,21 +1,27 @@
 /* pages/confirm/confirm.wxss */
 .container{
  
-  background-color: #537ec5;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
- 
+ height: 100vh;
+ align-content: center;
+ text-align: center;
+
 }
 
-.card
+.userInfo{
+  background-color: white;
+}
 
 .section{
-  background-color:white;
-  margin: 25px 0;
-  width: 265px;
-  border-radius: 3px;
-  height: 39px;
+
+margin: 20rpx, 0rpx ;
+background-color: white imporant!;
+border-radius: 6px;
+margin-top: 10px;
+
 }
 
 .submit{
