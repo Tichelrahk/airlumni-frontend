@@ -18,7 +18,7 @@
     <view class="blue strong italic">1 hour of Lagoona @ $207/hr</view>
     <view class="line"></view>
     <view>Date: Thursday, 25 December 2019</view>
-    <view>Time: 18:00 - 20:00</view>
+    <view>Time: 19:00 - 20:00</view>
     <view>Location: 112 Black Street, Dru Hill</view>
     <view class="btn orangebg white">Waiting for Bjorn to Accept</view>
   </view>
@@ -30,9 +30,9 @@
     <view class="blue strong italic">5 hours of Script.NEW @ $251/hr</view>
     <view class="line"></view>
     <view>Date: Thursday, 25 December 2019</view>
-    <view>Time: 18:00 - 20:00</view>
+    <view>Time: 7:00 - 12:00</view>
     <view>Location: 112 Black Street, Dru Hill</view>
-    <view  class="btn redbg white">NAME was unable to confirm your booking</view>
+    <view class="btn redbg white">NAME was unable to confirm your booking</view>
   </view>
 </view>
 
