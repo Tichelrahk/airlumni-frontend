@@ -33,24 +33,41 @@ page {
 }
 
 .card {
-  padding: 20rpx;
+  padding: 30rpx;
   border-radius: 10rpx;
   border: 1px solid lightgrey;
   margin-top: 20rpx;
-  box-shadow: 2px 2px 2px 0px rgba(100, 100, 100, .5);
+  box-shadow: 2px 2px 20rpx 0px rgba(200, 200, 200, .2);
+
 }
 
-.card-info {
+.dflex {
   display: flex;
+  align-items: center;
+}
+
+.pb {
+  padding-bottom: 20rpx;
+}
+.space-between {
+  justify-content: space-between
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.left-padding {
+  padding-left: 30rpx;
+  width: 100%;
+}
+.align-center {
   align-content: center;
 }
 
-.card-content {
-  padding-left: 30rpx;
-  width: 100%;
+.no-grow {
   flex-grow: 0;
 }
-
 .section {
   padding: 20rpx;
   margin: 20rpx, 0rpx;
@@ -86,11 +103,12 @@ page {
 
 .line {
   border-bottom: solid 2rpx rgba(100, 100, 100, .5);
-  margin: 20rpx 0;
+  margin: 20rpx 0;  
 }
 .strong {
   font-weight: 600;   
 }
+
 
 .italic {
   font-style: italic;

@@ -3,16 +3,18 @@
   <view class="header">Available Services</view>
   <view class="contain"> 
     <view wx:for="{{infoCard}}" wx:for-item="info">
-      <view class="card" bindtap="cardClick" data-id="{{info.id}}">   
-          <view class="card-info line"> 
-            <image class="avatar" src="{{info.user.profile_picture}}"/>
-            <view class="card-content">
-              <view class="username">{{info.user.name}}</view>
-              <view class="price">${{info.price}}</view>
-            </view>
-          </view>
-          <view class="tag lbluebg">{{info.name}}</view>
+      <view class="card" bindtap="cardClick" data-id="{{info.id}}">  
+        <view class="dflex space-between line pb"> 
+          <view class="h2 no-grow">{{info.name}}</view>
+          <view class="price no-grow">${{info.price}}</view>
         </view>
+        <view class="dflex"> 
+          <image class="avatar" src="{{info.user.profile_picture}}"/>
+          <view class="left-padding align-center">
+            <view class="username">{{info.user.name}}</view>
+          </view>
+        </view>
+      </view>
     </view> 
   </view>
 </view>
