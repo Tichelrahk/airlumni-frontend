@@ -31,6 +31,10 @@
       {
         "pagePath": "pages/bookings/bookings",
         "text": "Bookings"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "Profile"
       }
     ]
   },

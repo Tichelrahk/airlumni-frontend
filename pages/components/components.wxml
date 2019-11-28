@@ -1,5 +1,5 @@
 <view class="contain">
-  <view class="line"> line .line</view>
+  <view class="line">line .line</view>
   <view class="h1">Header 1 .h1</view>
   <view class="h2">Header 2 .h2</view>
   <view class="h3">Header 3 .h3</view>

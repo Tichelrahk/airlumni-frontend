@@ -1,7 +1,7 @@
 <!--pages/bookings/bookings.wxml-->
 <view class="header"> My Bookings </view>
 <view class="contain">
-  <view class="space"></view>
+  <view class="spacehuge"></view>
   <view class="h2 blue">Confirmed bookings</view>
   <view class="statuscard greenbd">
     <view class="blue strong italic">2 hour of LIS @ $283/hr</view>
