@@ -13,7 +13,7 @@ page {
 
 }
 
-
+ 
 /* LAYOUT */
 
 .container {
@@ -23,7 +23,7 @@ page {
   align-items: center;
   justify-content: space-between;
   padding: 200rpx 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 .header {
   background-color: var(--blue);
