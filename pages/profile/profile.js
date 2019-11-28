@@ -1,4 +1,5 @@
 // pages/profile/profile.js
+const app = getApp()
 Page({
 
   goToConfirm: function (e) {
@@ -8,6 +9,8 @@ Page({
       url: `/pages/confirm/confirm?id=${id}`
     })
   },
+
+  data: {},
 
   /**
    * Page initial data
@@ -19,27 +22,31 @@ Page({
   onLoad: function (options) {
 
     let page = this;
+    let userInfo = app.globalData.userInfo;
 
+    this.setData({
+      userInfo
+    })
 
     // Get api data
-    wx.request({
-      url: `https://airlumni.herokuapp.com/api/v1/services/${options.id}`,
-      method: 'GET',
-      success(res) {
-        console.log("I want this")
-        console.log(res)
-        const service = res.data
+  //   wx.request({
+  //     url: `https://airlumni.herokuapp.com/api/v1/services/${user.id}`,
+  //     method: 'GET',
+  //     success(res) {
+  //       console.log("I want this")
+  //       console.log(res)
+  //       const service = res.data
 
-        // Update local data
-        page.setData({
-          service: service
-        });
+  //       // Update local data
+  //       page.setData({
+  //         service: service
+  //       });
 
-        console.log(service)
+  //       console.log(service)
 
-        wx.hideToast();
-      }
-    });
+  //       wx.hideToast();
+  //     }
+  //   });
 
 
   },
