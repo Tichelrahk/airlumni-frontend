@@ -18,7 +18,7 @@
         <picker mode="time" name="start_time" value="{{st_time}}" start="00:01" end="23:59" bindchange="bindStartTimeChange">
           <view class="picker">{{st_time}}</view>
         </picker>
-      </view> 
+      </view>  
 
       <view class="time">
         <text class="time_head">to</text>

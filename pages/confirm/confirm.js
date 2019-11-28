@@ -17,7 +17,7 @@ Page({
   //   })
   // },
 
-
+ 
 
   createNewBooking: function (event) {
     console.log('dateTime', event)
