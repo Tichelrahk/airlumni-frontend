@@ -1,37 +1,36 @@
-/* pages/confirm/confirm.wxss */
-.container{
- 
-  background-color: white;
+.banner{
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
- height: 100vh;
- align-content: center;
- text-align: center;
-
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background-color: #EFF0F1;
 }
 
-.userInfo{
+.time_form{
+  display: flex;
   background-color: white;
+  margin-bottom: 150px;
+  border-radius: 5px;
+  height: 100px;
+
+} 
+.time{
+  margin: 0 50px;
 }
 
-.section{
-
-margin: 20rpx, 0rpx ;
-background-color: white imporant!;
-border-radius: 6px;
-margin-top: 10px;
-
+.time_head{
+  margin-bottom: 10px;
 }
-
-.submit{
-  background-color: #f39422;
-  opacity: 10px;
-  color: whitesmoke;
-  margin-top: 100px;
+picker{
+  padding-top: 10px;
+  opacity: .5;
 }
-
-.section__title{
-  color: whitesmoke;
-  text-align: center;
+.userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }

@@ -1,4 +1,7 @@
 // pages/bookings/bookings.js
+const app = getApp()
+
+
 Page({
 
   /**
@@ -12,7 +15,28 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    let page = this;
 
+
+    // Get api data
+    wx.request({
+      url: `https://airlumni.herokuapp.com/api/v1/users/${app.globalData.userId}`,
+      method: 'GET',
+      success(res) {
+        console.log("I want this")
+        console.log(10,res)
+        const service = res.data
+
+        // Update local data
+        page.setData({
+          service: service
+        });
+
+        console.log(service)
+
+        wx.hideToast();
+      }
+    });
   },
 
   /**

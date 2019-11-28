@@ -1,42 +1,40 @@
 <!--pages/confirm/confirm.wxml-->
-<view class="container">
+<view class="banner">
   <view class="userInfo">
     <image class="avatar" src="{{service.user.profile_picture}}"/>
     <view class="username">{{service.user.name}}</view>
     <view class="code">{{service.name}}</view>
   </view>
-  <form class="form" bindsubmit="goToBooking">
-    <view class="time">
-    <text>Start from</text>
-      <picker mode="date" name="start_date" value="{{date}}" start="2019-11-27" end="2020-09-01" bindchange="bindDateChange">
-        <view class="picker">
-          {{date}}
-        </view>
-      </picker>
-      <input class="section" name="name" placeholder="" />
-      <!-- <picker mode="time" name="start_time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-        <view class="picker">
-          {{time}}
-        </view>
-      </picker> -->
-    </view>
 
-    <view class="time">
-    <text>to</text>
-    <input class="section" name="name" placeholder="" />
-      <!-- <picker mode="date" name="end_date" value="{{date1}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-        <view class="picker">
-          {{date}}
-        </view>
-      </picker>
-      <picker mode="time" name="end_time" value="{{time1}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-        <view class="picker">
-          {{time}}
-        </view>
-      </picker> -->
-    </view>
+  <form class="form" bindsubmit="createNewBooking">
+    <view class="time_form">
 
-    <button bindtap="goToBookings" form-type="submit" class="submit">Confirm</button>
+      <view class="time">
+        <text class="time_head">Start from</text>
+        <picker mode="date" name="start_date" value="{{st_date}}" start="2019-11-27" end="2030-12-30" bindchange="bindStartDateChange">
+          <view class="picker">{{st_date}}</view>
+        </picker>
+        <!-- <input class="section" name="name" placeholder="" /> -->
+        <picker mode="time" name="start_time" value="{{st_time}}" start="00:01" end="23:59" bindchange="bindStartTimeChange">
+          <view class="picker">{{st_time}}</view>
+        </picker>
+      </view> 
+
+      <view class="time">
+        <text class="time_head">to</text>
+        <!-- <input class="section" name="name" placeholder="" /> -->
+        <picker mode="date" name="end_date" value="{{end_date}}" start="2019-11-01" end="2030-12-30" bindchange="bindEndDateChange">
+          <view class="picker">{{end_date}}</view>
+        </picker>
+        <picker mode="time" name="end_time" value="{{end_time}}" start="00:01" end="23:59" bindchange="bindEndTimeChange">
+          <view class="picker">{{end_time}}</view>
+        </picker>
+      </view>
+
+    </view>
+    
+
+    <button form-type="submit" data-id="{{service.id}}" class="submit btn orangebg">Confirm</button>
     </form>
 </view>
 

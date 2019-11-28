@@ -16,7 +16,7 @@ App({
           },
           // insert next code here
           success: (res) => {
-            console.log(res)
+            console.log('res from login', res)
             page.globalData.userId = res.data.userId
           }
         })
@@ -25,7 +25,9 @@ App({
   },
 
   globalData: {
+
     // url: `http://localhost:3000/api/v1/`
+
     url: `https://airlumni.herokuapp.com/api/v1/`
     }
 })
