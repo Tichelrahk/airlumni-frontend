@@ -18,6 +18,7 @@ App({
           success: (res) => {
             console.log('res from login', res)
             page.globalData.userId = res.data.userId
+            console.log(page.globalData.userId)
           }
         })
       }
