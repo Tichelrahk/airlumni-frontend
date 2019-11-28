@@ -1,2 +1,24 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!--pages/show/show.wxml-->
+<view class="banner">
+<view class= "h1" >Welcome to your profile page</view>
+
+<view class="section">
+      <view class = "flex-box"><image class="avatar1" src="{{userInfo.avatarUrl}}"/></view>
+      <view class="right-padding align-center">
+      </view>
+
+
+     <view class="space-between pb"> 
+      <view class="h2 no-grow blue"> Name </view>
+      <view class="titleBio strong italic line pb">{{userInfo.nickName}}</view>
+    </view>
+
+    <view class="h2 orange no-grow">Description{{user.description}}</view>
+    <view class="titleBio strong italic line pb">{{service.description}}</view>
+
+      <view class="h2 no-grow blue">Location </view>
+      <view class="titleBio strong italic line pb">{{service.location}}</view> 
+    <view class="bioInfo">{{service.user.description}}</view>
+  </view>
+<button bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit</button>
+</view>

@@ -1,53 +1,42 @@
-// pages/profile/profile.js
 const app = getApp()
+// pages/add_serv/add_serv.js
 Page({
-
-  goToConfirm: function (e) {
-    console.log(e)
-    const id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/confirm/confirm?id=${id}`
-    })
-  },
-
-  data: {},
 
   /**
    * Page initial data
    */
+  data: {
+
+  },
+  formSubmit: function (event) {
+    // console.log(10,event)
+    const form = {}
+    console.log(event);
+    form.name = event.detail.value.name
+    form.description = event.detail.value.description
+    form.price = event.detail.value.price
+    form.user_id = app.globalData.userId
+    console.log(10, form.user_id)
+    console.log(77,form);
+    wx.request({
+      url: `http://airlumni.herokuapp.com/api/v1/services`,
+      method: 'POST',
+      data: form,
+      success(res) {
+        console.log(res)
+        // redirect to index page when done
+        wx.switchTab({
+          url: '/pages/profile/profile',
+        })
+      }
+    });
+
+  },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
-    let page = this;
-    let userInfo = app.globalData.userInfo;
-
-    this.setData({
-      userInfo
-    })
-
-    // Get api data
-  //   wx.request({
-  //     url: `https://airlumni.herokuapp.com/api/v1/services/${user.id}`,
-  //     method: 'GET',
-  //     success(res) {
-  //       console.log("I want this")
-  //       console.log(res)
-  //       const service = res.data
-
-  //       // Update local data
-  //       page.setData({
-  //         service: service
-  //       });
-
-  //       console.log(service)
-
-  //       wx.hideToast();
-  //     }
-  //   });
-
 
   },
 

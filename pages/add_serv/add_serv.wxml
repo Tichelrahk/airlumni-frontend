@@ -1,0 +1,28 @@
+<!--pages/add_serv/add_serv.wxml-->
+<view class="banner">
+<view class="header">Add Services</view>
+<view class="container_cust">
+
+<form bindsubmit="formSubmit" class="form">
+  <view class="title">
+    <view class="section__title">Coding Language</view>
+    <input class="section" name="name"/>
+  </view>
+  <view class="title">
+    <view class="section__title" >Description
+    </view>
+    <textarea class="text"  name="description"/>
+  </view>
+  <view class="title">
+    <view class="section__title">Price</view>
+    <input class="section" name="price"  />
+  </view>
+  
+  <view class="btn-area">
+    <button class="submit" form-type="submit">Submit</button>
+  </view>
+</form>
+
+</view>
+</view>
+
