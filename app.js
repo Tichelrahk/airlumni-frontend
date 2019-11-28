@@ -25,7 +25,7 @@ App({
   },
 
   globalData: {
-    url: `http://localhost:3000/api/v1/`
-    // url: `https://airlumni.herokuapp.com/api/v1/`
+    // url: `http://localhost:3000/api/v1/`
+    url: `https://airlumni.herokuapp.com/api/v1/`
     }
 })
