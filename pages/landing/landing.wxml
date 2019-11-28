@@ -1,9 +1,9 @@
 <!--pages/landing/landing.wxml-->
 <view class="banner">
-  <view class="container">
+  <view class="containerlanding">
     <view class="h1">Airlumni</view>
     <view class="p">The easiest way to get a coding buddy</view>
-  <button bindtap="goToIndex" class="btn btn-flat" url="#">Get Started</button>
+  <button class="btn-ghost" bindtap="goToIndex" url="#">Get Started</button>
   </view>
 </view>
 
