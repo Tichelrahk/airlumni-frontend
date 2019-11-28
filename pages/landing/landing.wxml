@@ -1,10 +1,19 @@
 <!--pages/landing/landing.wxml-->
 <view class="banner">
-  <view class="container">
-    <view class="h1">Airlumni</view>
-    <view class="p">The easiest way to get a coding buddy</view>
-  <button bindtap="goToIndex" class="btn btn-flat" url="#">Get Started</button>
-  </view>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <view style="background-image: url({{item}}); background-size: cover; height: 100%; width: 100%; background-position: center;"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="h1">Airlumni</view>
+  <view class="p">The easiest way to get a study buddy</view>
+  <button class="btn-ghost" bindtap="goToIndex" url="#">Get Started</button>
+
 </view>
 
- 
+
+

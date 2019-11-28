@@ -1,5 +1,5 @@
 // pages/login/login.js
-const app = getApp()
+let app = getApp()
 Page({
 
   /**
@@ -8,6 +8,27 @@ Page({
   data: {
     userId: "" 
   },
+  updateUser: function (e) {
+    const userId = app.globalData.userId
+    // console.log(userId)
+    const info = {
+      name: e.detail.userInfo.nickName,
+      // description: '',
+      profile_picture: e.detail.userInfo.avatarUrl,
+      location: e.detail.userInfo.city
+    }
+    // console.log(info)
+    // console.log(app.globalData.userId)
+    wx.request({
+      url: app.globalData.url + `users/${userId}`,
+      method: "PUT",
+      data: info,
+      success(res) {
+        console.log(res)
+        console.log(`Updated user ${userId}`)
+      }
+    })
+  },
 
   getUserInfo: function (e) {
     console.log(e)
@@ -15,7 +36,9 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
+    this.updateUser(e)
   },
+
 
   /**
    * Lifecycle function--Called when page load
