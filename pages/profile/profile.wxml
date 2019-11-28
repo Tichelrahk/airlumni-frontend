@@ -1,2 +1,22 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!--pages/show/show.wxml-->
+<view class= "h1" >Welcome to your profile page</view>
+
+<view class="section">
+      <image class="avatar" src="{{service.user.profile_picture}}"/>
+      <view class="left-padding align-center">
+      </view>
+
+
+     <view class="space-between pb"> 
+      <view class="h2 no-grow blue">Name </view>
+      <view class="titleBio strong italic line pb">{{user.name}}</view>
+    </view>
+
+    <view class="h2 orange no-grow">Description{{user.description}}</view>
+    <view class="titleBio strong italic line pb">{{service.description}}</view>
+
+      <view class="h2 no-grow blue">Location </view>
+      <view class="titleBio strong italic line pb">{{service.location}}</view> 
+    <view class="bioInfo">{{service.user.description}}</view>
+  </view>
+<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Edit</button>
