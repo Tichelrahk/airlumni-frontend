@@ -32,13 +32,16 @@ page {
 .header {
   background-color: var(--blue);
   color: white;
-  padding: 15rpx;
+  padding: 35rpx;
   text-align: center;
   font-size: 45rpx;
   font-weight: 600;
   box-shadow: 2px 2px 2px 0px rgba(100, 100, 100, .5);
-  display: float;
-}
+  position: fixed;
+  width: 100%;
+  line-height: 50rpx;
+  box-sizing: border-box;
+  }
 .contain {
   padding: 50rpx;
   font-family: Helvetica, sans-serif;
@@ -242,7 +245,7 @@ page {
 }
 
 .spacehuge {
-  padding: 40rpx;
+  padding: 50rpx;
 }
 
 .spacelarge {

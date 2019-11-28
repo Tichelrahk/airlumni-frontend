@@ -2,6 +2,7 @@
 <view class="content">
   <view class="header">Available Services</view>
   <view class="contain"> 
+    <view class="spacehuge"></view>
     <view wx:for="{{infoCard}}" wx:for-item="info">
       <view class="card" bindtap="cardClick" data-id="{{info.id}}">  
         <view class="dflex space-between line pb"> 

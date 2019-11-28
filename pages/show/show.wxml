@@ -1,6 +1,7 @@
 <!--pages/show/show.wxml-->
 <view class="header">Service Profile</view>
 <view class="contain">
+  <view class="spacehuge"></view>
   <view class="card pb">  
     <view class="dflex space-between pb"> 
       <view class="h2 no-grow blue">{{service.name}}</view>
