@@ -26,6 +26,9 @@ Page({
       success(res) {
         console.log(res)
         console.log(`Updated user ${userId}`)
+        wx.redirectTo({
+          url: '/pages/profile/profile',
+        })
       }
     })
   },

@@ -108,13 +108,7 @@
 					"id": -1,
 					"name": "profile",
 					"pathName": "pages/profile/profile",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "add_serv",
-					"pathName": "pages/add_serv/add_serv",
+
 					"scene": null
 				}
 			]

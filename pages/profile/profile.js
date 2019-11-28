@@ -1,17 +1,53 @@
 // pages/profile/profile.js
+const app = getApp()
 Page({
+
+  goToConfirm: function (e) {
+    console.log(e)
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/confirm/confirm?id=${id}`
+    })
+  },
+
+  data: {},
 
   /**
    * Page initial data
    */
-  data: {
-
-  },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+
+    let page = this;
+    let userInfo = app.globalData.userInfo;
+
+    this.setData({
+      userInfo
+    })
+
+    // Get api data
+  //   wx.request({
+  //     url: `https://airlumni.herokuapp.com/api/v1/services/${user.id}`,
+  //     method: 'GET',
+  //     success(res) {
+  //       console.log("I want this")
+  //       console.log(res)
+  //       const service = res.data
+
+  //       // Update local data
+  //       page.setData({
+  //         service: service
+  //       });
+
+  //       console.log(service)
+
+  //       wx.hideToast();
+  //     }
+  //   });
+
 
   },
 
