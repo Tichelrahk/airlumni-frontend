@@ -26,15 +26,21 @@
     "list": [
       {
         "pagePath": "pages/list/list",
-        "text": "List"
+        "text": "List",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search.png"
       },
       {
         "pagePath": "pages/bookings/bookings",
-        "text": "Bookings"
+        "text": "Bookings",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list.png"
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "Profile"
+        "text": "Profile",
+        "iconPath": "images/favorites.png",
+        "selectedIconPath": "images/favorites.png"
       }
     ]
   },
