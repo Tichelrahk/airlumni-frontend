@@ -36,6 +36,7 @@ Page({
           b.booking.start_time = Date(b.booking.start_time)
           b.booking.end_time = Date(b.booking.end_time)
         })
+        if(userData.service) {
         userData.service.bookings.map((b) =>{
           b.booking.start_time = Date.parse(b.booking.start_time)
           b.booking.end_time = Date.parse(b.booking.end_time)
@@ -44,6 +45,7 @@ Page({
           b.booking.start_time = Date(b.booking.start_time)
           b.booking.end_time = Date(b.booking.end_time)
         })
+        }
         // Update local data
         page.setData({
           userData: userData
