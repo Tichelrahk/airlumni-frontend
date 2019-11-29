@@ -27,8 +27,11 @@ Page({
         console.log(res)
         console.log(`Updated user ${userId}`)
 
+
         wx.navigateBack({
           
+
+       
         })
       }
     })
