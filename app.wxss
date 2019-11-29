@@ -1,15 +1,15 @@
 page {
   --black: #000000;
   --orange: #f39422;
-  --lblue: #537ec5;
-  --blue:  #99a4d1;
+  --lblue: #8a98ce;
+  --blue:  #8a98ce;
   --dblue: #010038;
   --green: green;
   --orange: orange;
   --red: red;
   --lgrey: lightgray;
   --grey: grey;
-
+  --dgrey: #4A4A4A;
 
 }
 
@@ -260,4 +260,18 @@ page {
 
 .spacetiny {
   padding: 5rpx;
+}
+
+.btn-ghost {
+  color:var(--dgrey);
+  border: 2px solid ;
+  border-radius: 50px;
+  font-weight: heavy;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin-top: 125px;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
 }

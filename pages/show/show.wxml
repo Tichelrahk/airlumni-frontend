@@ -27,11 +27,12 @@
   </view>
 
 <view wx:if ="{{loggedIn}}">
-<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn orangebg">Book</button>
+<button bindtap="goToConfirm" data-id="{{service.id}}" class="btn-ghost">Book</button>
 </view>
 <view wx:else>
-    <button bindtap="goToConfirm"data-id="{{service.id}}" class="btn orangebg">Book</button>
+    <button bindtap="goToConfirm"data-id="{{service.id}}" class="btn-ghost">Book</button>
 </view>
 </view>
+
 
 
