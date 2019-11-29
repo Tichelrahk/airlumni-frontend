@@ -1,6 +1,5 @@
 <!--pages/login/login.wxml-->
 <view class="banner">
-<view class="containerlogin">
-<button class="btn-ghost" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
-</view>
+  <view class="containerlogin"></view>
+  <button class="btn-ghost" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
 </view>
