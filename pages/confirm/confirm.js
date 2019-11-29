@@ -35,9 +35,14 @@ Page({
       data: book,
       
       success() {
+        if  (app.globalData.login)
         wx.switchTab({
           url: '/pages/bookings/bookings',
         })
+        else 
+          wx.navigateTo({
+            url: '/pages/login/login',
+          })
       }
     });
 
