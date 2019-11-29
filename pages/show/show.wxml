@@ -10,11 +10,11 @@
  
     <view class="description pb">
       <view class="h4 line pb">Description</view>
-      <view class="descriptionInfo">{{service.description}}</view>
+      <view class="h5">{{service.description}}</view>
     </view> 
 
     <view class="pb">
-      <view class="titleBio strong italic line pb">Service Provider</view>
+      <view class="h4 line pb">Service Provider</view>
     <view class="dflex"> 
       <image class="avatar" src="{{service.user.profile_picture}}"/>
       <view class="left-padding align-center">

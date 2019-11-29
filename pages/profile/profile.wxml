@@ -4,11 +4,11 @@
   <view class="spacehuge"></view>
   <view class="space"></view>
   <view class="align-center"><image class="avatar1" src="{{userInfo.user.profile_picture}}"/></view>
-    <view class="strong name"> Name </view>
+    <view class="name"> Name </view>
     <view class="h4 line pb">{{userInfo.user.name}}</view>
 
-    <view wx:if="{{userInfo.user.location}}" class="strong blue"> Location </view>
-    <view wx:if="{{userInfo.user.location}}" class="h3 line pb">{{userInfo.user.location}}</view>
+    <view wx:if="{{userInfo.user.location}}" class="name"> Location </view>
+    <view wx:if="{{userInfo.user.location}}" class="h4 line pb">{{userInfo.user.location}}</view>
     <view wx:if="{{userInfo.user.location}}" class="spacelarge"></view>
  
     <view wx:if="{{userInfo.service}}" class="card">
