@@ -10,10 +10,10 @@
   </swiper>
 
   <view class="h1">Airlumni</view>
-  <view class="p">The easiest way to get a study buddy</view>
-  <button class="btn-ghost" bindtap="goToIndex" url="#">Get Started</button>
+  <view class="p">The easiest way to get a coding buddy</view>
+  <button class="btn-cust" bindtap="goToIndex" url="#">Get Started</button>
 
-</view>
+</view> 
 
 
 

@@ -14,8 +14,8 @@
           <view class="left-padding align-center">
             <view class="username">{{info.user.name}}</view>
           </view>
-        </view>
+        </view> 
       </view>
     </view> 
   </view>
-</view> 
+</view>  

@@ -7,7 +7,7 @@
   <view class="title">
     <view class="section__title">Coding Language</view>
     <input class="section" name="name"/>
-  </view>
+  </view> 
   <view class="title">
     <view class="section__title" >Description
     </view>

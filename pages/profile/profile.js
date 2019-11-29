@@ -3,13 +3,7 @@ const app = getApp()
 
 Page({
 
-  goToConfirm: function (e) {
-    console.log(e)
-    const id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/confirm/confirm?id=${id}`
-    })
-  },
+  
 
   goToAddServ: function (e) {
     console.log(e)
@@ -39,6 +33,7 @@ Page({
     //   userInfo
     // })
 
+
     // Get api data
     wx.request({
       url: `https://airlumni.herokuapp.com/api/v1/users/${app.globalData.userId}`,
@@ -58,6 +53,7 @@ Page({
         wx.hideToast();
       }
     });
+
 
 
   },

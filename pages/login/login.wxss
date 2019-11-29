@@ -1,6 +1,6 @@
 /* pages/login/login.wxss */
 
-
+ 
 .containerlogin{
 
   display: flex;
@@ -17,10 +17,14 @@
   background-position: center;
 }
 
-.btn-ghost {
-  border-radius: 10px;
+.button{
+  color:black;
+  border: 1px solid ;
+  border-radius:10px;
 }
 
-.btn-ghost:hover {
-  opacity: 1;
+.button:hover{
+border: 1px solid rgba(255, 8, 0, 0.76);
+color:rgba(255, 8, 0, 0.76);
+background-color: rgb(255, 255, 255);
 }

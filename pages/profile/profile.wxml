@@ -1,4 +1,4 @@
-<!--pages/show/show.wxml-->
+<!--pages/show/show.wxml--> 
 <view class="header">My Profile</view>
 <view class="contain"> 
   <view class="spacehuge"></view>
@@ -28,6 +28,7 @@
 
     <view class="strong blue">Service{{user.service}}</view>
     <view class="h3 line pb"></view> -->
+
 
   <view  class="spacelarge">
   <button wx:if="{{userInfo.service}}" bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit service</button>

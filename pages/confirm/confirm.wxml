@@ -10,7 +10,7 @@
     <view class="time_form">
 
       <view class="time">
-        <text class="time_head">Start from</text>
+        <text class="time_head strong line">Start from</text>
         <picker mode="date" name="start_date" value="{{st_date}}" start="2019-11-27" end="2030-12-30" bindchange="bindStartDateChange">
           <view class="picker">{{st_date}}</view>
         </picker>
@@ -21,7 +21,7 @@
       </view>  
 
       <view class="time">
-        <text class="time_head">to</text>
+        <text class="time_head strong line">to</text>
         <!-- <input class="section" name="name" placeholder="" /> -->
         <picker mode="date" name="end_date" value="{{end_date}}" start="2019-11-01" end="2030-12-30" bindchange="bindEndDateChange">
           <view class="picker">{{end_date}}</view>
@@ -34,7 +34,7 @@
     </view>
     
 
-    <button form-type="submit" data-id="{{service.id}}" class="submit btn-ghost">Confirm</button>
+    <button form-type="submit" data-id="{{service.id}}" class="submit btn-cust">Confirm</button>
     </form>
 </view>
 
