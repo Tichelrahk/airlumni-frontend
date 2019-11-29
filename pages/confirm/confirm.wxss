@@ -14,11 +14,13 @@
   background-color: white;
   margin-bottom: 150px;
   border-radius: 5px;
-  height: 100px;
-
+  padding: 40rpx;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
 } 
 .time{
-  margin: 0 50px;
+  margin: 40rpx;
 }
 
 .time_head{

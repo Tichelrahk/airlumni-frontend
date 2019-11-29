@@ -5,10 +5,8 @@
     <view class="username">{{service.user.name}}</view>
     <view class="code">{{service.name}}</view>
   </view>
-
   <form class="form" bindsubmit="createNewBooking">
     <view class="time_form">
-
       <view class="time">
         <text class="time_head strong line">Start from</text>
         <picker mode="date" name="start_date" value="{{st_date}}" start="2019-11-27" end="2030-12-30" bindchange="bindStartDateChange">
