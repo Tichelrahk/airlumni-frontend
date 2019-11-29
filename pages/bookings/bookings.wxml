@@ -35,7 +35,7 @@
     <view class="btn redbg white">Harry Carey was unable to confirm your booking</view>
   </view>
 </view>  -->
-
+ 
 <view class="header"> My Bookings </view>
 <view class="contain">
   <view class="spacehuge"></view>
