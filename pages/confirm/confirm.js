@@ -29,23 +29,23 @@ Page({
     console.log(book.start_time.toUTCString());
     // console.log(10,book.start_time)
     // let dateTime = new Date(book.start_time);
+    if(app.globalData.login){
     wx.request({ 
       url: `https://airlumni.herokuapp.com/api/v1/services/${event.detail.target.dataset.id}/bookings?user_id=${app.globalData.userId}`,
       method: 'POST',
       data: book,
       
       success() {
-        if  (app.globalData.login)
-        wx.switchTab({
+        wx.reLaunch({
           url: '/pages/bookings/bookings',
         })
-        else 
-          wx.navigateTo({
-            url: '/pages/login/login',
-          })
       }
     });
-
+    }
+    else
+      wx.navigateTo({
+        url: '/pages/login/login',
+      })
   },
   
   bindStartDateChange: function (e) {

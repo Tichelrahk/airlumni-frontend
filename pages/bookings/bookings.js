@@ -31,7 +31,7 @@ Page({
         userData.user.bookings.map((b) => {
           b.booking.start_time = Date.parse(b.booking.start_time)
           b.booking.end_time = Date.parse(b.booking.end_time)
-          b.time_diff = Math.round(((b.booking.end_time - b.booking.start_time) / 3600000) * 100) / 100
+          b.time_diff = ((b.booking.end_time - b.booking.start_time) / 3600000)
           b.total_cost = (b.time_diff * b.service.price).toFixed(2)
           b.booking.start_time = Date(b.booking.start_time)
           b.booking.end_time = Date(b.booking.end_time)
@@ -40,7 +40,7 @@ Page({
         userData.service.bookings.map((b) =>{
           b.booking.start_time = Date.parse(b.booking.start_time)
           b.booking.end_time = Date.parse(b.booking.end_time)
-          b.time_diff = Math.round(((b.booking.end_time - b.booking.start_time) / 3600000) * 100) / 100
+          b.time_diff = ((b.booking.end_time - b.booking.start_time) / 3600000)
           b.total_cost = (b.time_diff * b.service.price).toFixed(2)
           b.booking.start_time = Date(b.booking.start_time)
           b.booking.end_time = Date(b.booking.end_time)

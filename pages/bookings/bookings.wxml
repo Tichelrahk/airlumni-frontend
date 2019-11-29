@@ -48,8 +48,8 @@
       <view class="spacesmall"></view>
       <view class="blue strong italic">TOTAL COST: {{booking.total_cost}}</view>
       <view class="line"></view>
-      <view>Date: {{booking.booking.start_time}}</view>
-      <view>Time: {{booking.booking.start_time}}</view>
+      <view>Start: {{booking.booking.start_time}}</view>
+      <view>End: {{booking.booking.end_time}}</view>
       <view>Duration: {{booking.time_diff}}hrs</view>
       <view>Location: {{booking.user.location}}</view>
       <view class="btn orangebg white">Waiting for {{booking.user.name}} to Accept</view>
@@ -66,8 +66,8 @@
       <view class="spacesmall"></view>
       <view class="blue strong italic">TOTAL EARNINGS: {{booking.total_cost}}</view>
       <view class="line"></view>
-      <view>Date: {{booking.booking.start_time}}</view>
-      <view>Time: {{booking.booking.start_time}}</view>
+      <view>Start: {{booking.booking.start_time}}</view>
+      <view>End: {{booking.booking.end_time}}</view>
       <view>Duration: {{booking.time_diff}}hrs</view>
       <view>Location: {{booking.user.location}}</view>
       <view class="btn redbg white">Accept {{booking.user.name}}'s request</view>
