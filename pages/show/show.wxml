@@ -26,7 +26,13 @@
     <view class="bioInfo">{{service.user.description}}</view>
   </view>
 
+<view wx:if ="{{loggedIn}}">
 <button bindtap="goToConfirm" data-id="{{service.id}}" class="btn-ghost">Book</button>
+</view>
+<view wx:else>
+    <button bindtap="goToConfirm"data-id="{{service.id}}" class="btn-ghost">Book</button>
+</view>
+</view>
 
 
-</view> 
+
