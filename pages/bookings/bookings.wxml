@@ -36,19 +36,41 @@
   </view>
 </view>  -->
 
-<view wx:for="{{userData.user.bookings}}" wx:for-item="booking"> 
-  <view>{{booking.service.name}}</view>
-  <view>{{booking.user.name}}</view>
-  <view>{{booking.service.description}}</view>
-  <view>{{booking.booking.start_time}}</view> <view>{{booking.booking.end_time}}</view>
-  <view>{{booking.time_diff}}hrs</view> <text>${{booking.total_cost}}</text>
-  <view>{{booking.service.price}} service price</view>
-</view>
+<view class="header"> My Bookings </view>
+<view class="contain">
+  <view class="spacehuge"></view>
 
-<view wx:for="{{userData.service.bookings}}" wx:for-item="booking">
-  <view>{{booking.service.name}}</view>
-  <view>{{booking.user.name}}</view>
-  <view>{{booking.service.description}}</view>
-  <view>{{booking.booking.start_time}}</view> <view>{{booking.booking.end_time}}</view>
-  <view>{{booking.time_diff}}hrs</view> <text>${{booking.total_cost}}</text>
-</view>
+  <view class="h2 blue">My Bookings</view>
+
+  <view wx:for="{{userData.user.bookings}}" wx:for-item="booking"> 
+    <view class="statuscard orangebd">
+      <view class="blue strong italic">{{booking.time_diff}} hours of {{booking.service.name}} @ ${{booking.service.price}}/hr</view>
+      <view class="spacesmall"></view>
+      <view class="blue strong italic">TOTAL COST: {{booking.total_cost}}</view>
+      <view class="line"></view>
+      <view>Date: {{booking.booking.start_time}}</view>
+      <view>Time: {{booking.booking.start_time}}</view>
+      <view>Duration: {{booking.time_diff}}hrs</view>
+      <view>Location: {{booking.user.location}}</view>
+      <view class="btn orangebg white">Waiting for {{booking.user.name}} to Accept</view>
+    </view>
+  </view>
+
+  <view class="spacelarge"></view>
+
+  <view class="h2 blue">My Job Requests</view>
+
+  <view wx:for="{{userData.service.bookings}}" wx:for-item="booking"> 
+    <view class="statuscard redbd">
+      <view class="blue strong italic">{{booking.time_diff}} hours of {{booking.service.name}} @ ${{booking.service.price}}/hr</view>
+      <view class="spacesmall"></view>
+      <view class="blue strong italic">TOTAL EARNINGS: {{booking.total_cost}}</view>
+      <view class="line"></view>
+      <view>Date: {{booking.booking.start_time}}</view>
+      <view>Time: {{booking.booking.start_time}}</view>
+      <view>Duration: {{booking.time_diff}}hrs</view>
+      <view>Location: {{booking.user.location}}</view>
+      <view class="btn redbg white">Accept {{booking.user.name}}'s request</view>
+    </view>
+  </view>
+</view>  
