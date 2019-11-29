@@ -30,7 +30,7 @@
     <view class="h3 line pb"></view> -->
 
   <view  class="spacelarge">
-  <button wx:if="{{userInfo.service}}" bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit service1</button>
+  <button wx:if="{{userInfo.service}}" bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit service</button>
    <button wx:else bindtap="goToAddServ" data-id="{{service.id}}" class="btn-edit">Add service</button>
   </view>
  
