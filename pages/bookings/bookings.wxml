@@ -1,5 +1,5 @@
-<!--pages/bookings/bookings.wxml-->
-<view class="header"> My Bookings </view>
+<!-- <!-- pages/bookings/bookings.wxml -->
+<!-- <view class="header"> My Bookings </view>
 <view class="contain">
   <view class="space"></view>
   <view class="h2 blue">Confirmed bookings</view>
@@ -11,9 +11,9 @@
     <view>Location: 112 Black Street, Dru Hill</view>
     <view class="btn greenbg white">See Booking</view>
   </view>
-  <view class="spacelarge"></view>
+  <view class="spacelarge"></view> -->
 
-  <view class="h2 blue">Pending Bookings</view>
+  <!-- <view class="h2 blue">Pending Bookings</view>
   <view class="statuscard orangebd">
     <view class="blue strong italic">1 hour of Kafe @ $207/hr</view>
     <view class="line"></view>
@@ -34,5 +34,21 @@
     <view>Location: 112 Black Street, Dru Hill</view>
     <view class="btn redbg white">Harry Carey was unable to confirm your booking</view>
   </view>
+</view>  -->
+
+<view wx:for="{{userData.user.bookings}}" wx:for-item="booking"> 
+  <view>{{booking.service.name}}</view>
+  <view>{{booking.user.name}}</view>
+  <view>{{booking.service.description}}</view>
+  <view>{{booking.booking.start_time}}</view> <view>{{booking.booking.end_time}}</view>
+  <view>{{booking.time_diff}}hrs</view> <text>${{booking.total_cost}}</text>
+  <view>{{booking.service.price}} service price</view>
 </view>
 
+<view wx:for="{{userData.service.bookings}}" wx:for-item="booking">
+  <view>{{booking.service.name}}</view>
+  <view>{{booking.user.name}}</view>
+  <view>{{booking.service.description}}</view>
+  <view>{{booking.booking.start_time}}</view> <view>{{booking.booking.end_time}}</view>
+  <view>{{booking.time_diff}}hrs</view> <text>${{booking.total_cost}}</text>
+</view>

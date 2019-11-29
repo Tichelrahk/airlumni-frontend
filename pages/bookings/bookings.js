@@ -20,19 +20,37 @@ Page({
 
     // Get api data
     wx.request({
-      url: `https://airlumni.herokuapp.com/api/v1/users/${app.globalData.userId}`,
+      // id : app.globalData.userId
+      id: 20,
+      url: `https://airlumni.herokuapp.com/api/v1/users/20`,
       method: 'GET',
       success(res) {
         console.log("I want this")
-        console.log(10,res)
-        const service = res.data
-
+        console.log('Please',res)
+        const userData = res.data
+        console.log(userData)
+        userData.user.bookings.map((b) => {
+          b.booking.start_time = Date.parse(b.booking.start_time)
+          b.booking.end_time = Date.parse(b.booking.end_time)
+          b.time_diff = Math.round(((b.booking.end_time - b.booking.start_time) / 3600000) * 100) / 100
+          b.total_cost = (b.time_diff * b.service.price).toFixed(2)
+          b.booking.start_time = Date(b.booking.start_time)
+          b.booking.end_time = Date(b.booking.end_time)
+        })
+        userData.service.bookings.map((b) =>{
+          b.booking.start_time = Date.parse(b.booking.start_time)
+          b.booking.end_time = Date.parse(b.booking.end_time)
+          b.time_diff = Math.round(((b.booking.end_time - b.booking.start_time) / 3600000) * 100) / 100
+          b.total_cost = (b.time_diff * b.service.price).toFixed(2)
+          b.booking.start_time = Date(b.booking.start_time)
+          b.booking.end_time = Date(b.booking.end_time)
+        })
         // Update local data
         page.setData({
-          service: service
+          userData: userData
         });
 
-        console.log(service)
+        console.log(userData)
 
         wx.hideToast();
       }
