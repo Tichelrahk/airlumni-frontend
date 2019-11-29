@@ -26,7 +26,7 @@ Page({
       success(res) {
         console.log(res)
         console.log(`Updated user ${userId}`)
-        wx.redirectTo({
+        wx.switchTab({
           url: '/pages/profile/profile',
         })
       }
