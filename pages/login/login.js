@@ -26,8 +26,12 @@ Page({
       success(res) {
         console.log(res)
         console.log(`Updated user ${userId}`)
-        wx.switchTab({
-          url: '/pages/profile/profile',
+
+
+        wx.navigateBack({
+          
+
+       
         })
       }
     })
@@ -36,8 +40,10 @@ Page({
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
+    app.globalData.login = true
     this.setData({
       userInfo: e.detail.userInfo
+
     })
     this.updateUser(e)
   },

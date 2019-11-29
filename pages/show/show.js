@@ -11,9 +11,12 @@ Page({
   goToConfirm: function (e) {
     console.log(e)
     const id = e.currentTarget.dataset.id
+    
     wx.navigateTo({
       url: `/pages/confirm/confirm?id=${id}`
     })
+  
+    
   },
  
   /**
