@@ -34,7 +34,7 @@
     </view>
     
 
-    <button form-type="submit" data-id="{{service.id}}" class="submit btn orangebg">Confirm</button>
+    <button form-type="submit" data-id="{{service.id}}" class="submit btn-ghost">Confirm</button>
     </form>
 </view>
 

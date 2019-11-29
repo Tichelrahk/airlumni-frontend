@@ -22,7 +22,7 @@
   "tabBar": {
     "color": "#fff",
     "selectedColor": "#f39422",
-    "backgroundColor": "#293a80",
+    "backgroundColor": "#8a98ce",
     "list": [
       {
         "pagePath": "pages/list/list",
