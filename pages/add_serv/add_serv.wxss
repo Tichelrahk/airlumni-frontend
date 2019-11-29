@@ -22,11 +22,20 @@ box-sizing: border-box;
 }
 
 .submit{
-  background-color:#f39422;
-  opacity: 10px;
+  color:black;
+  border: 1px solid ;
+  border-radius:10px;
+  font-weight: heavy;
+  transition: opacity 0.3s ease;
   margin-top: 54px;
 }
 
+.submit:hover{
+  border: 1px solid rgba(255, 8, 0, 0.76);
+  color:rgba(255, 8, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.253);
+}
+ 
 .section__title{
   
   text-align: center;
