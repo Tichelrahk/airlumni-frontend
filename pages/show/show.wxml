@@ -4,12 +4,12 @@
   <view class="spacehuge"></view>
   <view class="card pb">  
     <view class="dflex space-between pb"> 
-      <view class="h2 no-grow blue">{{service.name}}</view>
-      <view class="h2 orange no-grow">${{service.price}}/hr</view>
+      <view class="h2">{{service.name}}</view>
+      <view class="price">${{service.price}}/hr</view>
     </view>
-
+ 
     <view class="description pb">
-      <view class="titleBio strong italic line pb">Description</view>
+      <view class="h4 line pb">Description</view>
       <view class="descriptionInfo">{{service.description}}</view>
     </view> 
   </view>
@@ -30,7 +30,7 @@
 <button bindtap="goToConfirm" data-id="{{service.id}}" class="btn-ghost">Book</button>
 </view>
 <view wx:else>
-    <button bindtap="goToConfirm"data-id="{{service.id}}" class="btn-ghost">Book</button>
+    <button bindtap="goToConfirm"data-id="{{service.id}}" class="btn-cust">Book</button>
 </view>
 </view>
 

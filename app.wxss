@@ -13,7 +13,7 @@ page {
 
 }
 
- 
+   
 /* LAYOUT */
 
 .container {
@@ -30,7 +30,7 @@ page {
 
 }
 .header {
-  background-color: var(--blue);
+  background-color: black;
   color: white;
   padding: 35rpx 0;
   text-align: center;
@@ -40,7 +40,7 @@ page {
   position: fixed;
   width: 100%;
   line-height: 50rpx;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   }
 .contain {
   padding: 50rpx;
@@ -72,9 +72,9 @@ page {
 
 .card {
   padding: 30rpx;
-  border-radius: 10rpx;
+  border-radius: 5rpx;
   margin-top: 20rpx;
-  box-shadow: 2px 2px 10rpx 0px rgba(10, 10, 10, .4);
+  box-shadow: 1px 1px 10px 1px rgba(10, 10, 10, .4);
 }
 
 .dflex {
@@ -124,8 +124,9 @@ page {
 }
 
 .h2 {
-  font-size: 60rpx;
-  font-weight: 500;
+  font-size: 50rpx;
+  font-weight: lighter;
+
 }
 
 .h3 {
@@ -230,14 +231,14 @@ page {
 }
 
 .username {
-  color: var(--blue);
+  color: rgba(51, 50, 50, 0.658);
   font-weight: 600;
   font-size: 35rpx;
 }
 
 .price {
-  color: var(--orange);
-  font-weight: 600;   
+  color: rgba(255, 8, 0, 0.76);
+  font-weight: bold;
   text-align: right;
   font-size: 35rpx;
 }
@@ -274,4 +275,19 @@ page {
 
 .btn-ghost:hover {
   opacity: 1;
+}
+
+.btn-cust{
+  color:black;
+  border: 1px solid ;
+  border-radius:10px;
+  font-weight: heavy;
+  transition: opacity 0.3s ease;
+  margin-top: 125px;
+}
+
+.btn-cust:hover{
+border: 1px solid rgba(255, 8, 0, 0.76);
+color:rgba(255, 8, 0, 0.76);
+background-color: rgba(0, 0, 0, 0.253);
 }

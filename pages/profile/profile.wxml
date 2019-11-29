@@ -1,4 +1,4 @@
-<!--pages/show/show.wxml-->
+<!--pages/show/show.wxml--> 
 <view class="header">My Profile</view>
 <view class="contain"> 
   <view class="spacehuge"></view>
@@ -31,4 +31,4 @@ note: only display following if service exists
 
   <view class="spacelarge"></view>
   <button bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit</button>
-</view>
+</view> 
