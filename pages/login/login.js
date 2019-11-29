@@ -27,8 +27,8 @@ Page({
         console.log(res)
         console.log(`Updated user ${userId}`)
 
-        wx.switchTab({
-          url: '/pages/profile/profile',
+        wx.navigateBack({
+          
         })
       }
     })
