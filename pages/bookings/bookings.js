@@ -20,9 +20,8 @@ Page({
 
     // Get api data
     wx.request({
-      // id : app.globalData.userId
-      id: 20,
-      url: `https://airlumni.herokuapp.com/api/v1/users/20`,
+      // id: 20,
+      url: `https://airlumni.herokuapp.com/api/v1/users/${app.globalData.userId}`,
       method: 'GET',
       success(res) {
         console.log("I want this")
