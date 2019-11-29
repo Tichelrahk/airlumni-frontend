@@ -25,7 +25,7 @@ Page({
       success(res) {
         console.log(res)
         // redirect to index page when done
-        wx.switchTab({
+        wx.reLaunch({
           url: '/pages/profile/profile',
         })
       }

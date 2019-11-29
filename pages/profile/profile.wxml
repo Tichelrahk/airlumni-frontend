@@ -3,21 +3,21 @@
 <view class="contain"> 
   <view class="spacehuge"></view>
   <view class="space"></view>
-  <view class="align-center"><image class="avatar1" src="{{userInfo.avatarUrl}}"/></view>
+  <view class="align-center"><image class="avatar1" src="{{userInfo.user.profile_picture}}"/></view>
     <view class="strong blue"> Name </view>
-    <view class="h3 line pb">{{userInfo.nickName}}</view>
+    <view class="h3 line pb">{{userInfo.user.name}}</view>
 
-    <view class="strong blue"> Location </view>
-    <view class="h3 line pb">{{userInfo.city}}, {{userInfo.province}}</view>
-    <view class="spacelarge"></view>
-note: only display following if service exists
-    <view class="card">
+    <view wx:if="{{userInfo.user.location}}" class="strong blue"> Location </view>
+    <view wx:if="{{userInfo.user.location}}" class="h3 line pb">{{userInfo.user.location}}</view>
+    <view wx:if="{{userInfo.user.location}}" class="spacelarge"></view>
+
+    <view wx:if="{{userInfo.service}}" class="card">
       <view class="h2 spacehuge align-center" >My Service</view>
       <view classs="spacehuge">
         <view class="strong blue">Service Name </view>
-        <view class="h3 line pb">Example service name</view>
+        <view class="h3 line pb">{{userInfo.service.name}}</view>
         <view class="strong blue">Service Description </view>
-        <view class="h3 line pb">Example service description</view>
+        <view class="h3 line pb">{{userInfo.service.description}}</view>
       </view>
 
     </view>
@@ -29,6 +29,10 @@ note: only display following if service exists
     <view class="strong blue">Service{{user.service}}</view>
     <view class="h3 line pb"></view> -->
 
-  <view class="spacelarge"></view>
-  <button bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit</button>
-</view> 
+
+  <view  class="spacelarge">
+  <button wx:if="{{userInfo.service}}" bindtap="goToEdit" data-id="{{service.id}}" class="btn-edit">Edit service</button>
+   <button wx:else bindtap="goToAddServ" data-id="{{service.id}}" class="btn-edit">Add service</button>
+  </view>
+ 
+</view>

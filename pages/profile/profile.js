@@ -1,8 +1,17 @@
 // pages/profile/profile.js
 const app = getApp()
+
 Page({
 
   
+
+  goToAddServ: function (e) {
+    console.log(e)
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/add_serv/add_serv`
+    })
+  },
 
   data: {},
 
@@ -14,15 +23,38 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log(app.globalData)
 
     let page = this;
-    let userInfo = app.globalData.userInfo;
+    // let userInfo = app.globalData.userInfo;
+    // console.log(userInfo)
 
-    this.setData({
-      userInfo
-    })
+    // this.setData({
+    //   userInfo
+    // })
 
-   
+
+    // Get api data
+    wx.request({
+      url: `https://airlumni.herokuapp.com/api/v1/users/${app.globalData.userId}`,
+      method: 'GET',
+      success(res) {
+        console.log("I want this")
+        console.log(res)
+        const userInfo = res.data
+
+        // Update local data
+        page.setData({
+          userInfo
+        });
+
+        console.log(userInfo)
+
+        wx.hideToast();
+      }
+    });
+
+
 
   },
 
